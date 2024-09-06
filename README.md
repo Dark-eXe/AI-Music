@@ -14,6 +14,9 @@ Kang Du duk1@unlv.nevada.edu <br>
 Elad Rozen rozene1@unlv.nevada.edu<br>
 Robert Gower gower@unlv.nevada.edu <br><br>
 
+To run:<br>
+execute Project/UI.py
+
 The project was originally developed using BitBucket for version control during the Fall 2022 semester at UNLV. At September 5th 2024, Andrew Turangan reinitiated the repository into GitHub.<br><br>
 ***UPDATE 9/5/24:<br>
 After initial testing, all .h5 models created in 2022 are outdated. Trained PianoAnime.keras model with success - currently the only working model. Will train other models under .keras in future.
