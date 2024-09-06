@@ -3,3 +3,4 @@ scikit-learn
 pygame
 tkinter
 keras
+music21
