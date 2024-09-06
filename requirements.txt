@@ -1,6 +1,6 @@
 pandas
 scikit-learn
 pygame
-tkinter
+tk
 keras
 music21
