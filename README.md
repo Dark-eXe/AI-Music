@@ -16,6 +16,8 @@ Robert Gower gower@unlv.nevada.edu <br><br>
 
 To run:<br>
 execute Project/UI.py
+![Snip20240905_2](https://github.com/user-attachments/assets/98acd4ca-69c7-4af9-9797-b2cf4237a288)
+
 
 The project was originally developed using BitBucket for version control during the Fall 2022 semester at UNLV. At September 5th 2024, Andrew Turangan reinitiated the repository into GitHub.<br><br>
 ***UPDATE 9/5/24:<br>
