@@ -1,7 +1,7 @@
 This repository contains the AI Music senior design project developed during the Fall 2022 semester at UNLV (University of Nevada, Las Vegas) for submission to the Fred and Harriet Cox Senior Design Competition.<br>
 This project won the competition under the Department of Computer Science.<br><br>
 
-The trained music-generating AI's primary design characteristic is of an LSTM (Long Short-Term Memory) model. See /Project/ai/TRAINING.ipynb Cell 21 to see the full NN (Neural Network) architecture.<br>
+The trained music-generating AI's primary design characteristic is of an LSTM (Long Short-Term Memory) model. See */Project/ai/TRAINING.ipynb* Cell 21 to see the full NN (Neural Network) architecture.<br>
 
 Contributors:<br>
 Bryan Arendt arendb1@unlv.nevada.edu <br>
