@@ -11,6 +11,7 @@ Shili Cao caos1@unlv.nevada.edu <br>
 Andrew Turangan turana1@unlv.nevada.edu (the author of this repository) <br>
 Jaylen Lewis lewisj11@unlv.nevada.edu <br>
 Kang Du duk1@unlv.nevada.edu <br>
+Elad Rozen
 Robert Gower gower@unlv.nevada.edu <br><br>
 
 The project was originally developed using BitBucket for version control during the Fall 2022 semester at UNLV. At September 5th 2024, Andrew Turangan reinitiated the repository into GitHub.<br><br>
