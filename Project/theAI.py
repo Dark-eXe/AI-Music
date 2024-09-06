@@ -10,7 +10,7 @@ def generateMusic(inst, artist, user_tempo, measures, music_file, showSheetMusic
 	
 	# file references
 	path = "train_music/" + inst + artist + "/"
-	model_name = inst + artist + ".h5"
+	model_name = inst + artist + ".keras"
 
 	unique_x_file = inst + artist + "_unique.txt"
 	xval_file = inst + artist + "_x.txt"
