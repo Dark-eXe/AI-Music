@@ -63,6 +63,7 @@ def MusicTest():
     #inputFile = getFile()
     #print("")
     inputFile = inst + artist + "_predicted.mid"
+    showSheetMusic = False
     if getSheetMusicInput() == 'y':
         showSheetMusic = True
     print("\n")
