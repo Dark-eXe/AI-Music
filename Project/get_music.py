@@ -9,7 +9,6 @@ tempi = ["Largo", "Adagio", "Andante", "Moderato", "Allegro", "Presto", "Slow", 
 pianoArtists = ["Bach", "Chopin", "Debussy", "Ellington", "Corea", "Anime"]
 violinArtists = ["Mozart", "Paganini", "Vivaldi"]
 fluteArtists = ["Brahms", "Wagner"]
-showSheetMusic = False
 
 def getInst():
     print("Available instruments:")
