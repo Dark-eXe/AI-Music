@@ -18,6 +18,9 @@ def getInst():
     print("Other inputs: Random")
     print("~" * 50)
     user_input = input("Enter instrument (number or random): ")
+    if isinstance(user_input, str):
+        if user_input.isdigit():
+            user_input = int(user_input)
     if user_input not in np.arange(0, len(instruments)):
         user_input = random.randint(0, len(instruments)-1)
     return instruments[user_input]
@@ -99,7 +102,7 @@ def getRepeat():
     print("~" * 50)
     return input("Would you like to generate music with the same settings? (y/n) ")
 
-def MusicTest():
+def musicTime():
     print("\n\n")
     print("AI MUSIC GENERATOR")
     print("-" * 100)
@@ -131,7 +134,7 @@ def MusicTest():
 
 if __name__ == "__main__":
     print("Be advised: no flute models have been trained yet (as of 2/24/25")
-    MusicTest()
+    musicTime()
     print("")
     print("Happy music!")
     print("")
