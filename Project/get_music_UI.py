@@ -331,8 +331,12 @@ class App(customtkinter.CTk):
 #We should consider using perhaps MVC "Model-View Controller "to layout our classes and functions
 
 if __name__ == "__main__":
+    print("Running UI version of get_music")
+    print("Be advised: sheet music functionality has not been tested since the original BitBucket")
     app = App()
     app.mainloop()
+    print("Happy music!")
+    print("")
     #app.IntializePygame()
     #app.on_closing()
 

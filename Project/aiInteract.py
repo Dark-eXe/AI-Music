@@ -9,7 +9,7 @@ import random
 import numpy as np
 import theAI
 import fileinput
-from UI import *
+from get_music_UI import *
 
 instrumentList = ["Piano", "Violin", "Flute"]
 pianoArtistList = ["Bach", "Chopin", "Debussy", "Ellington", "Corea", "Anime"]
@@ -71,4 +71,7 @@ def MusicTest(inst, artist, tempo, numMeasures, inputFile, showSheetMusic):
     theAI.generateMusic(inst, artist, tempo, numMeasures, inputFile, showSheetMusic) # Interact with the AI and generate the music.
     
     return inputFile
-# MusicTest()
+
+if __name__ == "__main__":
+    print("This file contains the source code for generating music.")
+    print("To generate music, run 'get_music.py' instead.")

@@ -147,3 +147,7 @@ def generateMusic(inst, artist, user_tempo, measures, music_file, showSheetMusic
 	convert_to_midi(predicted_notes, inst)
 	print("\n")
 	print("Generated music saved in", music_file)
+
+if __name__ == "__main__":
+    print("This file contains the source code for generating music.")
+    print("To generate music, run 'get_music.py' instead.")
