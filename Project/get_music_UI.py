@@ -6,7 +6,7 @@ from tkinter.ttk import *
 from tkinter.filedialog import askopenfile #helps by asking user to open a specific file
 from tkinter import filedialog #helps to create file/directory windows
 from tkinter import messagebox #helps show users errors
-import aiInteract #file that will do the function calls and talking between our gui and our ai
+from theAI import mid_button #file that will do the function calls and talking between our gui and our ai
 import tkinter
 import tkinter.messagebox
 import customtkinter
@@ -285,11 +285,11 @@ class App(customtkinter.CTk):
         global artist
         artist = self.artist_button.get()
 
-        #Jaylen - The following code calls aiInteract.py to start generating and open the file from theAI.py
+        #Jaylen - The following code calls mid_button from theAI to start generating and open the file from theAI.py
         # moved this function here to open the file right away (or throw error if no file was able to be made).
         # our application should be able to open any (.mid) music files that it can play through
         global mid_file
-        mid_file = aiInteract.MusicTest(instruments, artist, tempo, measures, file_path_var, showSheetMusic)
+        mid_file = mid_button(instruments, artist, tempo, measures, file_path_var, showSheetMusic)
 
         '''
         # check if the file has been opened
