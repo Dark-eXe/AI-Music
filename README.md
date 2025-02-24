@@ -15,7 +15,10 @@ Elad Rozen rozene1@unlv.nevada.edu<br>
 Robert Gower gower@unlv.nevada.edu <br><br>
 
 To run:<br>
-execute Project/UI.py
+execute Project/get_music.py<br>
+
+To run GUI version:
+execute Project/get_music_UI.py
 ![image](https://github.com/user-attachments/assets/25e9ce2b-d5ad-4b4f-8dc7-11cce7b84749)
 
 
