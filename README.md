@@ -1,7 +1,7 @@
 To run:<br>
 execute Project/get_music.py<br>
 
-To run GUI version:
+To run GUI version:<br>
 execute Project/get_music_UI.py
 ![image](https://github.com/user-attachments/assets/25e9ce2b-d5ad-4b4f-8dc7-11cce7b84749)
 
