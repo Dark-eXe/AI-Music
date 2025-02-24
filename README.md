@@ -1,3 +1,5 @@
+The trained music-generating AI's primary design characteristic is of an LSTM (Long Short-Term Memory) model. See */Project/ai/TRAINING.ipynb* Cell 21 to see the full NN (Neural Network) architecture.<br>
+
 To run:<br>
 execute Project/get_music.py<br>
 
