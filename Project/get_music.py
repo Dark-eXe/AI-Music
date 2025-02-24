@@ -115,14 +115,18 @@ def musicTime():
     print("")
     inputFile = getFile()
     print("")
+    
     #inputFile = inst + artist + "_predicted.mid"
     showSheetMusic = False
     #if getSheetMusicInput() == 'y':
     #    showSheetMusic = True
+    
     print("\n")
     print("-" * 100)
     print("Generating music...\n")
+    
     generateMusic(inst, artist, tempo, numMeasures, inputFile, showSheetMusic)
+    
     generateSame = True
     while generateSame:
         if getRepeat() == 'y':
