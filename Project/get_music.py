@@ -9,7 +9,6 @@ tempi = ["Largo", "Adagio", "Andante", "Moderato", "Allegro", "Presto", "Slow", 
 pianoArtists = ["Bach", "Chopin", "Debussy", "Ellington", "Corea", "Anime"]
 violinArtists = ["Mozart", "Paganini", "Vivaldi"]
 fluteArtists = ["Brahms", "Wagner"]
-showSheetMusic = False
 
 def getInst():
     print("Available instruments:")
@@ -18,6 +17,9 @@ def getInst():
     print("Other inputs: Random")
     print("~" * 50)
     user_input = input("Enter instrument (number or random): ")
+    if isinstance(user_input, str):
+        if user_input.isdigit():
+            user_input = int(user_input)
     if user_input not in np.arange(0, len(instruments)):
         user_input = random.randint(0, len(instruments)-1)
     return instruments[user_input]
@@ -99,7 +101,7 @@ def getRepeat():
     print("~" * 50)
     return input("Would you like to generate music with the same settings? (y/n) ")
 
-def MusicTest():
+def musicTime():
     print("\n\n")
     print("AI MUSIC GENERATOR")
     print("-" * 100)
@@ -113,14 +115,18 @@ def MusicTest():
     print("")
     inputFile = getFile()
     print("")
+    
     #inputFile = inst + artist + "_predicted.mid"
     showSheetMusic = False
     #if getSheetMusicInput() == 'y':
     #    showSheetMusic = True
+    
     print("\n")
     print("-" * 100)
     print("Generating music...\n")
+    
     generateMusic(inst, artist, tempo, numMeasures, inputFile, showSheetMusic)
+    
     generateSame = True
     while generateSame:
         if getRepeat() == 'y':
@@ -130,7 +136,8 @@ def MusicTest():
             generateSame = False
 
 if __name__ == "__main__":
-    print("Be advised: no flute models have been trained yet (as of 2/24/25"))
-    MusicTest()
+    print("Be advised: no flute models have been trained yet (as of 2/24/25")
+    musicTime()
+    print("")
     print("Happy music!")
     print("")
