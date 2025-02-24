@@ -130,7 +130,8 @@ def MusicTest():
             generateSame = False
 
 if __name__ == "__main__":
-    print("Be advised: no flute models have been trained yet (as of 2/24/25"))
+    print("Be advised: no flute models have been trained yet (as of 2/24/25")
     MusicTest()
+    print("")
     print("Happy music!")
     print("")
