@@ -1,6 +1,7 @@
 from keras.models import load_model
 import random
 import numpy as np
+import os
 from music21 import *
 from theAI import *
 
@@ -85,15 +86,21 @@ def getMeasures():
     return user_input
 
 def getFile():
+    def find_dir(dir, search_path):
+        for root, dirs, _ in os.walk(search_path):
+            if dir in dirs:
+                return os.path.join(root, dir)
+        return None
+    
     try:
         user_input = input("Enter write file (.mid): ")
         if user_input[-4:] != ".mid" or len(user_input) < 5:
             raise Exception("Invalid write file... will save as 'new_music.mid'")
     except Exception as input_error:
         print(input_error)
-        return "generated_music/new_music.mid"
-        
-    return "generated_music/" + user_input
+        return find_dir("generated_music", "../") + "/new_music.mid"
+
+    return find_dir("generated_music", "../") + "/" + user_input
 def getSheetMusicInput():
     return input("Would you like to generate sheet music? (y/n) ")
 
